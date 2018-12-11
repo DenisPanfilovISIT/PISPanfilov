@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Игра_ЗС"
+        xmlns:Emit="clr-namespace:System.Reflection.Emit;assembly=mscorlib" x:Class="Игра_ЗС.MainWindow"
+        mc:Ignorable="d"
+        Title="ЗС" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="368*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ЗАКРОЙ СЕКТОР" HorizontalAlignment="Left" Margin="261.188,80,0,0" VerticalAlignment="Top" FontSize="18" Grid.Column="1">
+            <Label.DataContext>
+                <Label/>
+            </Label.DataContext>
+        </Label>
+        <Button x:Name="button1" Content="НАЧАТЬ ИГРУ" HorizontalAlignment="Left" Margin="235.188,164,0,0" VerticalAlignment="Top" Width="207" Height="49" Grid.Column="1" Click="Button_Click">
+            <Button.DataContext>
+                <Button/>
+            </Button.DataContext>
+        </Button>
+        <Button x:Name="Button1" Content="Рейтинг" HorizontalAlignment="Left" Margin="235.4,242,0,0" VerticalAlignment="Top" Width="207" Height="51" Click="Button1_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
